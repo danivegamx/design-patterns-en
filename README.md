@@ -40,17 +40,17 @@ Taken from GoF (Gang of Four)
 /
 ---- Architecture /
      ---- Layer /
-          ---- LayerPattern.py
+          ---- Layer.py
      ---- MVC /
 ---- Design /
      ---- Creationals /
-          ---- BuilderPattern.js
-          ---- FactoryPattern.py
-          ---- abstractFactoryPattern.py
+          ---- Builder.js
+          ---- Factory.py
+          ---- abstractFactory.py
           ---- Singleton.js
      ---- Structure /
-          ---- FacadePattern.py
-          ---- AdapterPattern.js
+          ---- Facade.py
+          ---- Adapter.js
 LICENSE
 README.md
 ```
