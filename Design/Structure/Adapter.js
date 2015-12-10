@@ -1,3 +1,11 @@
+/**
+ Design Patterns v1
+
+ Design -> Creational -> Adapter
+ JavaScript
+ Daniel Vega Ceja, 2015
+**/
+
 function AdapteeShiping() { // Existent, previous.
   this.request = function(origin, destination, weight) {
     this.origin = origin;
@@ -24,6 +32,7 @@ function TargetShiping() { // New, improved
   }
 }
 
+// Adapter -> Returning a request (just as the Adaptee).
 function ShippingAdapter(credentials) {
   var targetShipping = new TargetShiping();
 
@@ -38,6 +47,7 @@ function ShippingAdapter(credentials) {
   }
 }
 
+// Client to call the adapter.
 function Client() {
   this.run = function() {
     var oldInterface = new AdapteeShiping();
@@ -50,6 +60,8 @@ function Client() {
     console.log(newCost);
   }
 }
+
+// Implementation
 
 var client = new Client();
 client.run();
