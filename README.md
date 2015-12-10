@@ -2,7 +2,7 @@
 
 __By Daniel Vega Ceja <ingdanivega@gmail.com> @danivegamx__
 
-* Frontend Core Engineer *
+_ Frontend Core Engineer _
 
 ## Intro
 
