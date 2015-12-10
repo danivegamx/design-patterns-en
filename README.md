@@ -1,7 +1,8 @@
 # Design Patterns Examples
 
-*By Daniel Vega Ceja <ingdanivega@gmail.com> @danivegamx*
-** Frontend Core Engineer **
+__By Daniel Vega Ceja <ingdanivega@gmail.com> @danivegamx__
+
+* Frontend Core Engineer *
 
 ## Intro
 
