@@ -6,22 +6,22 @@
  Daniel Vega Ceja, 2015
 **/
 
-var mySingleton = (function () {
-   // Instance stores a reference to the Singleton.
+var mySingleton = (function() {
+  // Instance stores a reference to the Singleton.
   var instance;
 
   function init() {
     // Private methods and variables.
-    function privateMethod(){
-        console.log( "I am private" );
+    function privateMethod() {
+      console.log("I am private");
     }
-    var privateRandomNumber = Math.round(Math.random()*1000);
+    var privateRandomNumber = Math.round(Math.random() * 1000);
 
     return {
       // Public methods and variables.
-      publicMethod: function () {
+      publicMethod: function() {
         privateMethod();
-        console.log( "Public scope can see me!" );
+        console.log("Public scope can see me!");
       },
       publicProperty: "I am also public",
       getRandomNumber: function() {
@@ -34,8 +34,8 @@ var mySingleton = (function () {
   return {
     // Get the Singleton instance if one exists
     // Create one if it doesn't
-    getInstance: function () {
-      if ( !instance ) {
+    getInstance: function() {
+      if (!instance) {
         instance = init();
       }
       return instance;
@@ -50,5 +50,5 @@ var singleA = mySingleton.getInstance();
 var singleB = mySingleton.getInstance();
 //singleA.publicMethod();
 //singleA.privateMethod();
-console.log( singleB.getRandomNumber() );
-console.log(" It's the same? -> " + (singleA.getRandomNumber() === singleB.getRandomNumber()) ); // true
+console.log(singleB.getRandomNumber());
+console.log(" It's the same? -> " + (singleA.getRandomNumber() === singleB.getRandomNumber())); // true
