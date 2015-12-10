@@ -1,6 +1,6 @@
 # Design Patterns Examples
 
-By 
+By
 __Daniel Vega Ceja__
 <ingdanivega@gmail.com>
 @danivegamx
@@ -32,7 +32,7 @@ Taken from GoF (Gang of Four)
 | / | Creationals   | Structure     | Behavior     |
 | --- | ------------- | ------------- | ----------- |
 | class | `Factory`       | Adapter       | Interpreter<br>Template Method |
-| object | `Abstract Factory`<br>`Builder`<br>Prototype<br>Singleton      | Adapter<br>Bridge<br>Composite<br>Decorator<br>Facade<br>Flyweight<br>Proxy      | Chain of responsability<br>Command<br>Iterator<br>Moderator<br>Memento<br>Observer<br>State<br>Strategy<br>Visitor |
+| object | `Abstract Factory`<br>`Builder`<br>Prototype<br>`Singleton`      | Adapter<br>Bridge<br>Composite<br>Decorator<br>`Facade`<br>Flyweight<br>Proxy      | Chain of responsability<br>Command<br>Iterator<br>Moderator<br>Memento<br>Observer<br>State<br>Strategy<br>Visitor |
 
 ### File and folder structure
 
@@ -45,6 +45,10 @@ Taken from GoF (Gang of Four)
      ---- Creationals /
           ---- BuilderPattern.js
           ---- FactoryPattern.py
+          ---- abstractFactoryPattern.py
+          ---- Singleton.js
+     ---- Structure /
+          ---- Facade.py
 LICENSE
 README.md
 ```
