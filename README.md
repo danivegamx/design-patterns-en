@@ -24,3 +24,17 @@ At the moment, these versions are used on the proyect:
 *ECMAScript 5*
 
 I will add ECMAScript 6 syntax also.
+
+### File and folder structure
+
+```
+/
+---- Architecture /
+     ---- Layer /
+          ---- LayerPattern.py
+---- Design /
+     ---- Creationals /
+          ---- BuilderPattern.js
+LICENSE
+README.md
+```
