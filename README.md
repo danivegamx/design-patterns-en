@@ -1,9 +1,26 @@
 # Design Patterns Examples
 
-__By Daniel Vega Ceja <ingdanivega@gmail.com> @danivegamx__
+By 
+__Daniel Vega Ceja__
+<ingdanivega@gmail.com>
+@danivegamx
 
-_ Frontend Core Engineer _
+*Frontend Core Engineer*
 
-## Intro
+### Intro
 
 This repo is to share examples for design patterns, coded in Python and Javascript (Vanilla). Contribute with examples and files to give variety to each pattern.
+
+### Versions
+
+At the moment, these versions are used on the proyect:
+
+#### Python
+
+*ver 3.5*
+
+#### Javascript
+
+*ECMAScript 5*
+
+I will add ECMAScript 6 syntax also.
