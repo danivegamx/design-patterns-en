@@ -1,3 +1,13 @@
+"""
+ Design Patterns v1
+
+ Architecture -> Layer
+ Python
+ Daniel Vega Ceja, 2015
+"""
+# The layers, are representations of the server-client development architecture
+
+# Data layer or Database.
 class DataLayer:
     def __init__(self):
         self.name = "DataLayer"
@@ -10,6 +20,7 @@ class DataLayer:
         self.lowerlayer.sc2(param)
         print("Out of %s" % self.name)
 
+# Backend layer.
 class LogicLayer:
     def __init__(self):
         self.name = "LogicLayer"
@@ -22,6 +33,7 @@ class LogicLayer:
         self.lowerlayer.sc1(param)
         print("Out of %s" % self.name)
 
+# Frontend layer.
 class PresentationLayer:
     def __init__(self):
         self.name = "PresentationLayer"
@@ -39,7 +51,9 @@ if __name__ == "__main__":
     logic = LogicLayer()
     data = DataLayer()
 
+    # Identifying lower layers in the architecture.
     data.setlowerlayer(logic)
     logic.setLowerLayer(ui)
 
+    # Retrieving a JSON from the database.
     data.sc3("{name:'Daniel Vega'}")
