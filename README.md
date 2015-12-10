@@ -44,6 +44,7 @@ Taken from GoF (Gang of Four)
 ---- Design /
      ---- Creationals /
           ---- BuilderPattern.js
+          ---- FactoryPattern.py
 LICENSE
 README.md
 ```
