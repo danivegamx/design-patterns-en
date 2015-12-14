@@ -44,6 +44,10 @@ Taken from GoF (Gang of Four)
      ---- Layer /
           ---- Layer.py
      ---- MVC /
+---- Behavior /
+     ---- Command.py
+     ---- Observer.py
+     ---- Strategy.py
 ---- Design /
      ---- Creationals /
           ---- Builder.js
