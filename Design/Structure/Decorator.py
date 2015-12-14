@@ -8,19 +8,19 @@
 
 from abc import ABCMeta
 
-class Shape(metaclass=ABCMeta):
+class Car(metaclass=ABCMeta):
     def draw(self):
         pass
 
-class Circle(Shape):
+class Sport(Shape):
     def draw(self):
-        print("I am a circle")
+        print("I am a sport car")
 
-class Rectangle(Shape):
+class Family(Shape):
     def draw(self):
-        print("I am a rectangle")
+        print("I am a family car")
 
-class ShapeDecorator(Shape):
+class CarDecorator(Shape):
     def __init__(self, decoratedShape):
         self.decoratedShape = decoratedShape
 
@@ -30,7 +30,7 @@ class ShapeDecorator(Shape):
     def doSomethingElse(self):
         pass
 
-class ColorRedShapeDecorator(ShapeDecorator):
+class ColorRedCarDecorator(ShapeDecorator):
     def draw(self):
         self.doSomethingElse()
         self.decoratedShape.draw()
@@ -39,9 +39,9 @@ class ColorRedShapeDecorator(ShapeDecorator):
         print("Color red")
 
 if __name__ == "__main__":
-    circle = Circle()
-    redCircle = ColorRedShapeDecorator( Circle() )
+    car = Sport()
+    redCar = ColorRedCarDecorator( Sport() )
 
-    circle.draw()
+    car.draw()
     print("--------------------------------")
-    redCircle.draw()
+    redCar.draw()
